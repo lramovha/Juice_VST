@@ -1,0 +1,33 @@
+# JUCE Project
+Builds/
+JuceLibraryCode/
+
+# Visual Studio
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.vcxproj.user
+.vs/
+Debug/
+Release/
+x64/
+Win32/
+
+# Temporary files
+*.tmp
+*.log
+*.pdb
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Projucer backups
+*.jucer~
+
+# Binary output
+*.vst3
+*.dll
+*.exe
+*.app
