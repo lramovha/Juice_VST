@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="NHf8bO" name="volumeSlider" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut"
-              pluginChannelConfigs="{0, 2}">
-  <MAINGROUP id="UuFHMb" name="volumeSlider">
-    <GROUP id="{218C8F56-05CA-071E-D8AD-D2E1E596EBEF}" name="Source">
-      <FILE id="juZfvq" name="PluginProcessor.cpp" compile="1" resource="0"
+<JUCERPROJECT id="SGtbxO" name="ParametricEQ" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="Ramovha Audio"
+              pluginVST3Category="EQ,Filter,Fx" pluginAAXCategory="1" pluginDesc="Preq">
+  <MAINGROUP id="uhnjBR" name="ParametricEQ">
+    <GROUP id="{C2B29D1C-C6E5-5EDD-6191-E6054B3B6286}" name="Source">
+      <GROUP id="{F0337BFA-D8AB-8EC8-8D39-D4AEE0FAEF18}" name="DSP">
+        <FILE id="YzPgj3" name="EQBand.cpp" compile="1" resource="0" file="Source/EQBand.cpp"/>
+        <FILE id="t0qIyH" name="EQBand.h" compile="0" resource="0" file="Source/EQBand.h"/>
+      </GROUP>
+      <FILE id="EctURr" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="ahc9Cm" name="PluginProcessor.h" compile="0" resource="0"
+      <FILE id="qX5A7G" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="rKwU3x" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="UvxhZl" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="gW9WLE" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="IWl4g3" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
   </MAINGROUP>
   <MODULES>
@@ -27,6 +31,7 @@
     <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
@@ -36,8 +41,8 @@
   <EXPORTFORMATS>
     <VS2022 targetFolder="Builds/VisualStudio2022">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="volumeSlider"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="volumeSlider"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="ParametricEQ"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="ParametricEQ"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_animation" path="../../JUCE/modules"/>
@@ -50,6 +55,7 @@
         <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
